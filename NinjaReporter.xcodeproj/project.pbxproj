@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -13,6 +13,11 @@
 		2D0F4125244DF93600EB78D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F4123244DF93600EB78D1 /* Main.storyboard */; };
 		2D0F4127244DF93B00EB78D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F4126244DF93B00EB78D1 /* Assets.xcassets */; };
 		2D0F412A244DF93B00EB78D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D0F4128244DF93B00EB78D1 /* LaunchScreen.storyboard */; };
+		2D0F4132244DFDDC00EB78D1 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F4131244DFDDC00EB78D1 /* CollectionViewController.swift */; };
+		2D0F4134244DFFE600EB78D1 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0F4133244DFFE600EB78D1 /* CollectionViewCell.swift */; };
+		2D0FFCFB244E107100E13290 /* Ninja.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0FFCFA244E107100E13290 /* Ninja.swift */; };
+		2D0FFCFD244EA82E00E13290 /* HomeNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D0FFCFC244EA82E00E13290 /* HomeNavigationController.swift */; };
+		4794FCAF11FA6D94382EA1F0 /* Pods_NinjaReporter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E8630D505BBD1A5BE61C8F71 /* Pods_NinjaReporter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,13 @@
 		2D0F4126244DF93B00EB78D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D0F4129244DF93B00EB78D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D0F412B244DF93B00EB78D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D0F4131244DFDDC00EB78D1 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		2D0F4133244DFFE600EB78D1 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		2D0FFCFA244E107100E13290 /* Ninja.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ninja.swift; sourceTree = "<group>"; };
+		2D0FFCFC244EA82E00E13290 /* HomeNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationController.swift; sourceTree = "<group>"; };
+		3086F7EB46C70036C6B5E38B /* Pods-NinjaReporter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NinjaReporter.debug.xcconfig"; path = "Target Support Files/Pods-NinjaReporter/Pods-NinjaReporter.debug.xcconfig"; sourceTree = "<group>"; };
+		A982E62A8CB490D7B177EE05 /* Pods-NinjaReporter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NinjaReporter.release.xcconfig"; path = "Target Support Files/Pods-NinjaReporter/Pods-NinjaReporter.release.xcconfig"; sourceTree = "<group>"; };
+		E8630D505BBD1A5BE61C8F71 /* Pods_NinjaReporter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NinjaReporter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4794FCAF11FA6D94382EA1F0 /* Pods_NinjaReporter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		013CB219F85D9F87137BFB7A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8630D505BBD1A5BE61C8F71 /* Pods_NinjaReporter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		2D0F4111244DF93600EB78D1 = {
 			isa = PBXGroup;
 			children = (
 				2D0F411C244DF93600EB78D1 /* NinjaReporter */,
 				2D0F411B244DF93600EB78D1 /* Products */,
+				E10A776F8D93E8814B625A39 /* Pods */,
+				013CB219F85D9F87137BFB7A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,11 +83,24 @@
 				2D0F411F244DF93600EB78D1 /* SceneDelegate.swift */,
 				2D0F4121244DF93600EB78D1 /* ViewController.swift */,
 				2D0F4123244DF93600EB78D1 /* Main.storyboard */,
+				2D0F4133244DFFE600EB78D1 /* CollectionViewCell.swift */,
+				2D0F4131244DFDDC00EB78D1 /* CollectionViewController.swift */,
+				2D0FFCFC244EA82E00E13290 /* HomeNavigationController.swift */,
+				2D0FFCFA244E107100E13290 /* Ninja.swift */,
 				2D0F4126244DF93B00EB78D1 /* Assets.xcassets */,
 				2D0F4128244DF93B00EB78D1 /* LaunchScreen.storyboard */,
 				2D0F412B244DF93B00EB78D1 /* Info.plist */,
 			);
 			path = NinjaReporter;
+			sourceTree = "<group>";
+		};
+		E10A776F8D93E8814B625A39 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3086F7EB46C70036C6B5E38B /* Pods-NinjaReporter.debug.xcconfig */,
+				A982E62A8CB490D7B177EE05 /* Pods-NinjaReporter.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D0F412E244DF93B00EB78D1 /* Build configuration list for PBXNativeTarget "NinjaReporter" */;
 			buildPhases = (
+				52DAEFFEE2F06C1B376CD664 /* [CP] Check Pods Manifest.lock */,
 				2D0F4116244DF93600EB78D1 /* Sources */,
 				2D0F4117244DF93600EB78D1 /* Frameworks */,
 				2D0F4118244DF93600EB78D1 /* Resources */,
+				BFC96305FCE8B7B1CEA975B9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,11 +171,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		52DAEFFEE2F06C1B376CD664 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NinjaReporter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFC96305FCE8B7B1CEA975B9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NinjaReporter/Pods-NinjaReporter-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NinjaReporter/Pods-NinjaReporter-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NinjaReporter/Pods-NinjaReporter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2D0F4116244DF93600EB78D1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D0FFCFB244E107100E13290 /* Ninja.swift in Sources */,
+				2D0F4134244DFFE600EB78D1 /* CollectionViewCell.swift in Sources */,
+				2D0F4132244DFDDC00EB78D1 /* CollectionViewController.swift in Sources */,
+				2D0FFCFD244EA82E00E13290 /* HomeNavigationController.swift in Sources */,
 				2D0F4122244DF93600EB78D1 /* ViewController.swift in Sources */,
 				2D0F411E244DF93600EB78D1 /* AppDelegate.swift in Sources */,
 				2D0F4120244DF93600EB78D1 /* SceneDelegate.swift in Sources */,
@@ -282,6 +366,7 @@
 		};
 		2D0F412F244DF93B00EB78D1 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3086F7EB46C70036C6B5E38B /* Pods-NinjaReporter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +385,7 @@
 		};
 		2D0F4130244DF93B00EB78D1 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A982E62A8CB490D7B177EE05 /* Pods-NinjaReporter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
